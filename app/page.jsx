@@ -20,7 +20,7 @@ export default function Home() {
         <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-gold font-display text-[10px] font-bold text-gold shadow-[0_0_16px_rgba(201,162,75,0.25)] sm:h-9 sm:w-9 sm:text-xs">
           JHV
         </div>
-        <Link href="/" className="font-display text-lg tracking-wide sm:text-[22px]">Julio Herrera Velutini</Link>
+        <Link href="/" className="font-display text-lg tracking-wide sm:text-[15px]">Julio Herrera Velutini</Link>
       </header>
 
       {/*
