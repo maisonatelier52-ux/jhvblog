@@ -34,7 +34,7 @@ export const metadata = {
 
 export default function Finance() {
   return (
-    <div className="min-h-screen bg-black px-6 text-white lg:px-20">
+    <div className="min-h-dvh overflow-x-clip bg-black px-6 text-white lg:px-20">
       <header className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3.5">
           <Logo />
