@@ -47,7 +47,7 @@ export default function Legacy() {
           </span>
           <span className="font-display text-[22px] tracking-wide">Julio Herrera Velutini</span>
         </Link>
-        <Link href="/" className="text-sm text-neutral-400 transition hover:text-gold">← Home</Link>
+        {/* <Link href="/" className="text-sm text-neutral-400 transition hover:text-gold">← Home</Link> */}
       </header>
 
       <main className="grid gap-14 py-12 lg:grid-cols-[1fr_1.2fr] lg:gap-24 lg:py-20">

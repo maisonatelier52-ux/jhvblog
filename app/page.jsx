@@ -22,12 +22,7 @@ export default function Home() {
         </div>
         <Link href="/" className="font-display text-lg tracking-wide sm:text-[15px]">Julio Herrera Velutini</Link>
       </header>
-
-      {/*
-        MOBILE:  image on top, title sits INSIDE the image (same grid cell),
-                 then intro, tags and stats underneath.
-        DESKTOP: text on the left, image on the right.
-      */}
+      
       <main className="relative z-10 grid min-h-0 flex-1 grid-cols-1 pb-12 lg:grid-cols-[1fr_1.15fr] lg:grid-rows-[minmax(0,1fr)] lg:gap-20">
         {/* Left column ("contents" on mobile so its children become grid items) */}
         <section className="contents lg:flex lg:flex-col lg:gap-[clamp(1rem,3vh,1.75rem)] lg:self-center">

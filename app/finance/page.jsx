@@ -42,7 +42,6 @@ export default function Finance() {
           </span>
           <span className="font-display text-[22px] tracking-wide">Julio Herrera Velutini</span>
         </Link>
-        <Link href="/" className="text-sm text-neutral-400 transition hover:text-gold">← Home</Link>
       </header>
 
       <main className="py-12 lg:py-20">
