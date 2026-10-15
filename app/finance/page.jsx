@@ -1,3 +1,4 @@
+import Logo from "../../components/Logo";
 import Link from "next/link";
 
 const stats = [
@@ -36,9 +37,7 @@ export default function Finance() {
     <div className="min-h-screen bg-black px-6 text-white lg:px-20">
       <header className="flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-3.5">
-          <span className="flex h-11 w-11 items-center justify-center rounded-full border border-gold font-display text-base font-bold text-gold">
-            JHV
-          </span>
+          <Logo />
           <span className="font-display text-[22px] tracking-wide">Julio Herrera Velutini</span>
         </Link>
       </header>
