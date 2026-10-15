@@ -4,8 +4,7 @@ const more = ["Legacy", "Finance", "Leadership"];
 
 export const metadata = {
   title: "Lifestyle",
-  description:
-    "The foundations and causes Julio Herrera Velutini supports in animal welfare, the arts, technology and education.",
+  description: "The foundations and causes Julio Herrera Velutini supports in animal welfare, the arts, technology and education.",
 };
 
 export default function Lifestyle() {

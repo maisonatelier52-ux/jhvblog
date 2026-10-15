@@ -28,8 +28,7 @@ const more = ["Legacy", "Leadership", "Lifestyle"];
 
 export const metadata = {
   title: "Finance",
-  description:
-    "Bancrédito, Consultiva and Britannia Financial Group: the banking and wealth-management companies linked to Julio Herrera Velutini.",
+  description: "Bancrédito, Consultiva and Britannia Financial Group: the banking and wealth-management companies linked to Julio Herrera Velutini.",
 };
 
 export default function Finance() {

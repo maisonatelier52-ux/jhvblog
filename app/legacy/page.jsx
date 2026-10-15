@@ -32,8 +32,7 @@ const more = ["Finance", "Leadership", "Lifestyle"];
 
 export const metadata = {
   title: "Legacy",
-  description:
-    "The family history, early career and milestones that shaped international banker Julio Herrera Velutini.",
+  description: "The family history, early career and milestones that shaped international banker Julio Herrera Velutini.",
 };
 
 export default function Legacy() {

@@ -31,8 +31,7 @@ const more = ["Legacy", "Finance", "Lifestyle"];
 
 export const metadata = {
   title: "Leadership",
-  description:
-    "The roles, companies and decisions that define how Julio Herrera Velutini leads in finance.",
+  description: "The roles, companies and decisions that define how Julio Herrera Velutini leads in finance.",
 };
 
 export default function Leadership() {
