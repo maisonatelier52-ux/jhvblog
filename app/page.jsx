@@ -18,14 +18,12 @@ export default function Home() {
       </header>
 
       <main className="mt-0 land:-mt-16 lg:-mt-16 grid min-h-0 flex-1 grid-cols-1 grid-rows-[minmax(0,1fr)_auto] gap-4 pb-[max(1.25rem,env(safe-area-inset-bottom))] land:grid-cols-2 land:grid-rows-1 land:gap-6 land:pb-0 lg:grid-cols-[1fr_1.5fr] lg:grid-rows-1 lg:gap-10 lg:pb-0">
-        {/* Photo (first on phones, right on desktop) */}
         <section className="relative -mx-5 min-h-[35%] overflow-hidden sm:-mx-8 land:order-2 land:m-0 lg:order-2 lg:-mr-20 lg:ml-0">
           <div className="absolute inset-0 stack:inset-auto stack:left-1/2 stack:top-0 stack:aspect-square stack:h-full stack:min-w-[139%] stack:-translate-x-[64%] lg:inset-0 lg:aspect-auto lg:min-w-0 lg:translate-x-0 lg:left-0">
             <Image src="/images/julio.webp" alt="Julio Herrera Velutini" fill priority sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover object-[center_top] lg:object-[right_top] [mask-image:linear-gradient(to_bottom,black_85%,transparent)] land:[mask-image:linear-gradient(to_left,black_85%,transparent)] lg:[mask-image:linear-gradient(to_bottom,black_85%,transparent)]" />
           </div>
         </section>
-
-        {/* Text */}
+       
         <section className="flex flex-col justify-center gap-3 land:order-1 land:gap-2 land:pt-14 lg:order-1 lg:gap-[clamp(0.5rem,2.6vh,1.5rem)] lg:pt-[clamp(2rem,8vh,4rem)]">
           <div className="flex items-center gap-4">
             <span className="h-px w-10 bg-gold" />

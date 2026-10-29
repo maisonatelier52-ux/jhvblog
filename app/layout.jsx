@@ -18,12 +18,10 @@ export const metadata = {
     default: "Julio Herrera Velutini | Blog",
     template: "%s | Julio Herrera Velutini",
   },
-  description:
-    "Stories, ideas and insights: the family legacy, the career in finance and the causes behind international banker Julio Herrera Velutini.",
+  description: "Stories, ideas and insights: the family legacy, the career in finance and the causes behind international banker Julio Herrera Velutini.",
   openGraph: {
     title: "Julio Herrera Velutini | Blog",
-    description:
-      "The family legacy, the career in finance and the causes behind international banker Julio Herrera Velutini.",
+    description: "The family legacy, the career in finance and the causes behind international banker Julio Herrera Velutini.",
     type: "website",
     images: ["/images/julio.webp"],
   },
