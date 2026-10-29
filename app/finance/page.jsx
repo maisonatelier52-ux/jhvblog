@@ -1,31 +1,16 @@
-import Logo from "../../components/Logo";
-import Link from "next/link";
+import PageShell from "../../components/PageShell";
 
 const stats = [
-  { value: "30+", label: "Years in banking and finance" },
-  { value: "5", label: "Financial hubs: Puerto Rico, Florida, London, Geneva, Dubai" },
-  { value: "7th", label: "Generation of bankers in his family (his own description)" },
+  { value: "30+", label: "Years in finance" },
+  { value: "5", label: "Financial hubs" },
+  { value: "7th", label: "Generation of bankers" },
 ];
 
 const companies = [
-  {
-    name: "Bancrédito International Bank & Trust",
-    place: "Puerto Rico · Florida",
-    text: "An online international bank registered in Puerto Rico, with offices in Puerto Rico and Florida. Julio serves as Chairman of the Board.",
-  },
-  {
-    name: "Consultiva",
-    place: "Puerto Rico · New York",
-    text: "An investment advisory firm registered with the U.S. Securities and Exchange Commission. The Bancrédito Group expanded by acquiring it in 2016.",
-  },
-  {
-    name: "Britannia Financial Group",
-    place: "London · Geneva · Dubai",
-    text: "A London-based holding company he founded. Its group includes brokerage, wealth management, payments, securities and a bank and trust, with a presence in the UK, Switzerland and the Middle East.",
-  },
+  { name: "Bancrédito International Bank & Trust", place: "Puerto Rico · Florida", text: "Online international bank registered in Puerto Rico. Julio is Chairman of the Board." },
+  { name: "Consultiva", place: "Puerto Rico · New York", text: "SEC-registered investment advisory firm, acquired by the Bancrédito Group in 2016." },
+  { name: "Britannia Financial Group", place: "London · Geneva · Dubai", text: "London-based holding company he founded, spanning brokerage, wealth management, payments and banking." },
 ];
-
-const more = ["Legacy", "Leadership", "Lifestyle"];
 
 export const metadata = {
   title: "Finance",
@@ -34,53 +19,31 @@ export const metadata = {
 
 export default function Finance() {
   return (
-    <div className="min-h-dvh overflow-x-clip bg-black px-6 text-white lg:px-20">
-      <header className="flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-3.5">
-          <Logo />
-          <span className="font-display text-[22px] tracking-wide">Julio Herrera Velutini</span>
-        </Link>
-      </header>
+    <PageShell page="finance">
+      <p className="text-xs uppercase tracking-[0.24em] text-gold">Finance</p>
+      <h1 className="mt-2 font-display text-3xl font-bold leading-[1.05] sm:text-4xl lg:text-6xl">Banking, across borders.</h1>
+      <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-400 sm:text-base short:hidden compact:hidden">
+        Three decades in international banking and wealth management, from Puerto Rico to New York, London, Switzerland and Dubai.
+      </p>
 
-      <main className="py-12 lg:py-20">
-        <p className="anim-left text-[13px] uppercase tracking-[0.24em] text-gold">Finance</p>
-        <h1 className="anim-left delay-1 mt-6 max-w-4xl font-display text-5xl font-bold leading-[1.05] lg:text-7xl">
-          Banking, across borders.
-        </h1>
-        <p className="anim-left delay-2 mt-8 max-w-2xl text-[19px] leading-relaxed text-neutral-400">Three decades 
-        in international banking and wealth management, built from a base in Puerto Rico and reaching into New York, 
-        London, Switzerland and Dubai.</p>
-
-        {/* Stats */}
-        <div className="mt-14 grid gap-px overflow-hidden border border-neutral-800 bg-neutral-800 md:grid-cols-3">
-          {stats.map((s, i) => (
-            <div key={s.value} className="anim-right bg-black p-8" style={{ animationDelay: `${0.3 + i * 0.15}s` }}>
-              <p className="font-display text-6xl font-bold text-gold">{s.value}</p>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-400">{s.label}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Companies */}
-        <div className="mt-6 grid gap-6 lg:grid-cols-3">
-          {companies.map((c, i) => (
-            <article key={c.name} className="anim-right group border border-neutral-800 border-t-2 border-t-gold bg-neutral-950 p-8 transition hover:-translate-y-1 hover:border-gold/60" style={{ animationDelay: `${0.6 + i * 0.15}s` }}>
-              <p className="text-xs uppercase tracking-[0.2em] text-gold">{c.place}</p>
-              <h2 className="mt-4 font-display text-2xl leading-snug">{c.name}</h2>
-              <p className="mt-4 leading-relaxed text-neutral-400">{c.text}</p>
-            </article>
-          ))}
-        </div>
-      </main>
-
-      <nav className="flex flex-wrap items-center gap-3 border-t border-neutral-900 py-10">
-        <span className="mr-2 text-sm text-neutral-500">Explore:</span>
-        {more.map((c) => (
-          <Link key={c} href={`/${c.toLowerCase()}`} className="rounded-full border border-neutral-700 px-5 py-2.5 text-sm transition hover:border-gold hover:text-gold">
-            {c}
-          </Link>
+      <div className="mt-4 grid grid-cols-3 tiny:hidden gap-px border border-neutral-800 bg-neutral-800 lg:mt-6">
+        {stats.map((s) => (
+          <div key={s.value} className="bg-black px-3 py-2.5 lg:p-4">
+            <p className="font-display text-2xl font-bold text-gold lg:text-4xl">{s.value}</p>
+            <p className="text-[11px] leading-snug text-neutral-400 sm:text-sm">{s.label}</p>
+          </div>
         ))}
-      </nav>
-    </div>
+      </div>
+
+      <div className="mt-3 grid gap-3 lg:mt-4 lg:grid-cols-3 lg:gap-4">
+        {companies.map((c) => (
+          <article key={c.name} className="border border-neutral-800 border-t-2 border-t-gold bg-neutral-950 px-4 py-3 lg:p-5">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-gold">{c.place}</p>
+            <h2 className="mt-1 font-display text-base leading-snug lg:mt-2 lg:text-xl">{c.name}</h2>
+            <p className="mt-1.5 text-sm leading-relaxed text-neutral-400 short:max-lg:hidden">{c.text}</p>
+          </article>
+        ))}
+      </div>
+    </PageShell>
   );
 }
