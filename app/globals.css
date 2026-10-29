@@ -24,3 +24,7 @@ h1, h2, h3, p {
 @custom-variant compact (@media (max-width: 1023px) and (max-height: 880px));
 /* Very low windows */
 @custom-variant tiny (@media (max-height: 600px));
+/* Phones held sideways: wide but very low, so use a side-by-side layout */
+@custom-variant land (@media (max-width: 1023px) and (max-height: 500px) and (orientation: landscape));
+/* Phones held upright (everything below desktop that is not landscape-short) */
+@custom-variant stack (@media (max-width: 1023px) and (not ((max-height: 500px) and (orientation: landscape))));
