@@ -27,7 +27,7 @@ export default function Home() {
         <section className="flex flex-col justify-center gap-3 lg:order-1 lg:gap-6 lg:pt-16">
           <div className="flex items-center gap-4">
             <span className="h-px w-10 bg-gold" />
-            <p className="text-xs uppercase tracking-[0.3em] text-gold">The Blog</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-gold">JMHV</p>
           </div>
 
           <h1 className="font-display text-[clamp(1.6rem,7vw,2.5rem)] font-bold uppercase leading-[1.1] tracking-[0.02em] lg:text-[clamp(2rem,min(3.4vw,9vh),4.5rem)]">
@@ -35,7 +35,7 @@ export default function Home() {
           </h1>
 
           <p className="max-w-[480px] text-sm leading-relaxed text-neutral-400 sm:text-base lg:text-[19px] short:hidden lg:short:block">
-            The family legacy, the career in finance and the causes behind international banker Julio Herrera Velutini.
+            Banking, family and legacy, told through the life of Julio Herrera Velutini.
           </p>
 
           <div className="hidden items-center gap-8 border-t border-neutral-800 pt-5 lg:flex lg:short:hidden">
@@ -49,7 +49,7 @@ export default function Home() {
 
           <div className="mt-1 flex items-center gap-4">
             <Arrow href="/finance" label="Start reading" />
-            <span className="text-sm uppercase tracking-[0.2em] text-neutral-400">Start reading</span>
+            <span className="text-sm uppercase tracking-[0.2em] text-neutral-400">Explore</span>
           </div>
         </section>
       </main>
